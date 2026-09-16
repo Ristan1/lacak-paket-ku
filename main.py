@@ -11,7 +11,7 @@ PACKAGES = [
     {"courier": "anteraja", "awb": ["11004344737949"]}
 ]
 
-TARGET_KEYWORDS = ["banjarmasin", "banjarbaru", "diantar", "out for delivery", "delivered", "kurir"]
+TARGET_KEYWORDS = ["banjarmasin", "banjarbaru", "diantar", "out for delivery", "delivered", "kurir", "Astambul"]
 HISTORY_FILE = "history.json"
 
 # Load riwayat dari file JSON jika ada
