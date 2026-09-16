@@ -4,5 +4,11 @@
         "label": "Baterai hp ku",
         "last_desc": "",
         "completed": false
+    },
+    "SPXID067128515849": {
+        "courier": "spx",
+        "label": "Kipas cooler",
+        "last_desc": "",
+        "completed": false
     }
 }
