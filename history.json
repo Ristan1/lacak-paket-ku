@@ -22,5 +22,11 @@
         "label": "Kipas 12v",
         "last_desc": "",
         "completed": false
+    },
+    "SPXID061829853889": {
+        "courier": "spx",
+        "label": "Blender sualuh",
+        "last_desc": "",
+        "completed": false
     }
 }
