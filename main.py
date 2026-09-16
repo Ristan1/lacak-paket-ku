@@ -7,7 +7,7 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 PACKAGES = [
-    {"courier": "spx", "awb": ["SPXID067128515849", "SPXID069937113999"]}, 
+    {"courier": "spx", "awb": ["SPXID067128515849", "SPXID060720478819", "SPXID061829853889", "SPXID069937113999"]}, 
     {"courier": "anteraja", "awb": ["11004344737949"]}
 ]
 
