@@ -10,5 +10,11 @@
         "label": "Kipas cooler",
         "last_desc": "",
         "completed": false
+    },
+    "SPXID069937113999": {
+        "courier": "spx",
+        "label": "Paste dan thermal pad",
+        "last_desc": "",
+        "completed": false
     }
 }
