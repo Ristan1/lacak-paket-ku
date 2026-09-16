@@ -4,5 +4,11 @@
         "label": "Baterai hp ku",
         "last_desc": "",
         "completed": false
+    },
+    "SPXID06712851584": {
+        "courier": "spx",
+        "label": "Kidijd",
+        "last_desc": "",
+        "completed": false
     }
 }
