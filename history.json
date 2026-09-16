@@ -1,22 +1,8 @@
 {
-    "SPXID067128515849": {
-        "last_desc": "PESANAN DIPROSES DI LOKASI TRANSIT KAB. BANJAR, ASTAMBUL HUB.",
-        "completed": false
-    },
-    "11004344737949": {
-        "last_desc": "PAKET SEDANG DIPROSES DI HUB BANJARMASIN",
-        "completed": false
-    },
-    "SPXID060720478819": {
-        "last_desc": "PESANAN DIKIRIM DARI LOKASI TRANSIT KAB. PASURUAN, PANDAAN FIRST MILE HUB.",
-        "completed": false
-    },
-    "SPXID061829853889": {
-        "last_desc": "PESANAN DIKIRIM DARI LOKASI TRANSIT KOTA BANJARMASIN, BANJARMASIN TIMUR FIRST MILE HUB.",
-        "completed": false
-    },
-    "SPXID069937113999": {
-        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
-        "completed": false
-    }
+  "SPXID067128515849": {
+    "courier": "spx",
+    "label": "Kabel XLR",
+    "last_desc": "PESANAN DIPROSES DI LOKASI TRANSIT KAB. BANJAR",
+    "completed": false
+  }
 }
