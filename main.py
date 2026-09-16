@@ -10,9 +10,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 # Satu ekspedisi bisa berisi banyak resi (dipisah koma)
 PACKAGES = [
     {"courier": "spx", "awb": ["SPXID067128515849", "SPXID069937113999"]},
-    {"courier": "anteraja", "awb": ["11004344737949"]},
-    {"courier": "jnt", "awb": ["JZ1234567890", "JZ9876543210"]},
-    {"courier": "jne", "awb": ["JZ1234567890", "JZ9876543210"]}
+    {"courier": "anteraja", "awb": ["11004344737949"]}
 ]
 
 # Kata kunci lokasi/status target
