@@ -16,5 +16,11 @@
         "label": "Paste dan thermal pad",
         "last_desc": "",
         "completed": false
+    },
+    "SPXID060720478819": {
+        "courier": "spx",
+        "label": "Kipas 12v",
+        "last_desc": "",
+        "completed": false
     }
 }
