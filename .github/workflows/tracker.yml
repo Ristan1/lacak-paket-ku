@@ -2,7 +2,7 @@ name: Lacak Paket Otomatis
 
 on:
   schedule:
-    # Berjalan otomatis setiap 6 menit
+    # Berjalan otomatis setiap 6 jam
     - cron: '0 */6 * * *'
   workflow_dispatch: # Memungkinkan kita tes jalankan manual kapan saja
 
