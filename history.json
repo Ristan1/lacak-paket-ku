@@ -1,8 +1,8 @@
 {
-  "SPXID067128515849": {
-    "courier": "spx",
-    "label": "Kabel XLR",
-    "last_desc": "PESANAN DIPROSES DI LOKASI TRANSIT KAB. BANJAR",
-    "completed": false
-  }
+    "SPXID067128515849": {
+        "courier": "spx",
+        "label": "Kabel XLR",
+        "last_desc": "KURIR SUDAH DITUGASKAN. PESANAN AKAN DIKIRIM.",
+        "completed": false
+    }
 }
