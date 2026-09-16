@@ -6,11 +6,16 @@ BINDERBYTE_API_KEY = os.environ.get("BINDERBYTE_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-# --- ISI DATA KURIR & RESI KAMU DI SINI ---
-COURIER = "anteraja"  # Contoh: jnt, jne, spx, sicepat, ninja, wahana
-AWB_NUMBER = "11004344737949"
+# --- DAFTAR RESI BERDASARKAN EKSPEDISI ---
+# Satu ekspedisi bisa berisi banyak resi (dipisah koma)
+PACKAGES = [
+    {"courier": "spx", "awb": ["SPXID067128515849", "SPXID069937113999"]},
+    {"courier": "anteraja", "awb": ["11004344737949"]},
+    {"courier": "jnt", "awb": ["JZ1234567890", "JZ9876543210"]},
+    {"courier": "jne", "awb": ["JZ1234567890", "JZ9876543210"]}
+]
 
-# Kata kunci yang dicari (Banjarbaru, Banjarmasin, atau status kurir diantar)
+# Kata kunci lokasi/status target
 TARGET_KEYWORDS = ["banjarmasin", "banjarbaru", "diantar", "out for delivery", "delivered", "kurir"]
 
 def send_telegram(message):
@@ -22,36 +27,43 @@ def send_telegram(message):
     }
     requests.post(url, json=payload)
 
-def check_resi():
-    url = f"https://api.binderbyte.com/v1/track?api_key={BINDERBYTE_API_KEY}&courier={COURIER}&awb={AWB_NUMBER}"
+def check_single_resi(courier, awb):
+    url = f"https://api.binderbyte.com/v1/track?api_key={BINDERBYTE_API_KEY}&courier={courier}&awb={awb}"
     try:
         response = requests.get(url).json()
         if response.get("status") == 200:
             history = response["data"]["history"]
-            
-            # Cek status paling terbaru
             latest_status = history[0] if history else None
             
             if latest_status:
                 desc = latest_status["desc"]
                 date = latest_status["date"]
                 
-                # Cek apakah ada kata kunci target dalam deskripsi status terbaru
                 if any(keyword in desc.lower() for keyword in TARGET_KEYWORDS):
                     msg = (
-                        f"🚨 *UPDATE PAKET ({COURIER.upper()})*\n\n"
+                        f"🚨 *UPDATE PAKET ({courier.upper()})*\n\n"
                         f"📌 *Status:* {desc}\n"
                         f"🕒 *Waktu:* {date}\n"
-                        f"📦 *Resi:* `{AWB_NUMBER}`"
+                        f"📦 *Resi:* `{awb}`"
                     )
                     send_telegram(msg)
-                    print("Notifikasi berhasil dikirim ke Telegram!")
+                    print(f"Notif terkirim untuk resi {awb}")
                 else:
-                    print(f"Status terbaru: {desc} (Belum memenuhi kata kunci target)")
+                    print(f"Resi {awb} status: {desc} (Belum sesuai kata kunci)")
         else:
-            print("Gagal mengambil resi:", response.get("message"))
+            print(f"Gagal mengambil resi {awb}: {response.get('message')}")
     except Exception as e:
-        print("Error:", e)
+        print(f"Error pada resi {awb}: {e}")
 
 if __name__ == "__main__":
-    check_resi()
+    for item in PACKAGES:
+        courier = item["courier"]
+        awb_list = item["awb"]
+        
+        # Jika awb berbentuk string tunggal, ubah jadi list biar tidak error
+        if isinstance(awb_list, str):
+            awb_list = [awb_list]
+            
+        for awb in awb_list:
+            check_single_resi(courier, awb)
+
