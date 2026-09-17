@@ -6,7 +6,7 @@ BINDERBYTE_API_KEY = os.environ.get("BINDERBYTE_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-TARGET_KEYWORDS = ["banjarmasin", "banjarbaru", "diantar", "out for delivery", "delivered", "kurir", "banjar", "rumah", "ristan", "astambul"]
+TARGET_KEYWORDS = ["banjarmasin", "banjarbaru", "diantar", "out for delivery", "delivered", "kurir", "banjar", "rumah", "tiba", "diterima", "ristan", "astambul"]
 HISTORY_FILE = "history.json"
 
 # Load riwayat dari file JSON
