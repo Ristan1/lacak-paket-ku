@@ -9,7 +9,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 TARGET_KEYWORDS = [
     "banjarmasin", "banjarbaru", "diantar", "out for delivery", 
     "delivered", "kurir", "banjar", "rumah", "tiba", "diterima", 
-    "ristan", "astambul", "selesai", "pengantaran", "completed", "sampai"
+    "ristan", "astambul", "selesai", "ditugaskan", "membawa", "pengantaran", "completed", "sampai"
 ]
 HISTORY_FILE = "history.json"
 
