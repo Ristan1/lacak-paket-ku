@@ -38,7 +38,8 @@ def check_single_resi(awb, data):
         response = requests.get(url).json()
         if response.get("status") == 200:
             history = response.get("data", {}).get("history", [])
-            latest_status = history[0] if history else None
+            # PERBAIKAN DI SINI: Mengambil status TERBARU (indeks terakhir -1), bukan pertama (0)
+            latest_status = history[-1] if history else None
             
             if latest_status:
                 desc = latest_status["desc"]
@@ -83,5 +84,6 @@ if __name__ == "__main__":
     # Simpan kembali riwayat terbaru ke file JSON (Resi delivered otomatis terhapus)
     with open(HISTORY_FILE, "w") as f:
         json.dump(history_data, f, indent=4)
+
 
 
