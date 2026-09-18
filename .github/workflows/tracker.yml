@@ -1,7 +1,7 @@
 name: Lacak Paket Otomatis
 
 on:
-    schedule:
+  schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
