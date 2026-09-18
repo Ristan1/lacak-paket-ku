@@ -6,7 +6,11 @@ BINDERBYTE_API_KEY = os.environ.get("BINDERBYTE_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-TARGET_KEYWORDS = ["banjarmasin", "banjarbaru", "diantar", "out for delivery", "delivered", "kurir", "banjar", "rumah", "tiba", "diterima", "ristan", "astambul"]
+TARGET_KEYWORDS = [
+    "banjarmasin", "banjarbaru", "diantar", "out for delivery", 
+    "delivered", "kurir", "banjar", "rumah", "tiba", "diterima", 
+    "ristan", "astambul", "selesai", "completed", "sampai"
+]
 HISTORY_FILE = "history.json"
 
 # Load riwayat dari file JSON
@@ -40,8 +44,9 @@ def check_single_resi(awb, data):
                 desc = latest_status["desc"]
                 date = latest_status["date"]
                 
-                # Cek apakah paket sudah terkirim / diterima
-                is_delivered = "delivered" in desc.lower() or "diterima" in desc.lower()
+                # Cek apakah paket sudah terkirim / diterima / selesai
+                delivered_keywords = ["delivered", "diterima", "selesai", "completed", "ristan"]
+                is_delivered = any(keyword in desc.lower() for keyword in delivered_keywords)
                 
                 # Kirim notif HANYA jika deskripsi status berubah/baru
                 if desc != last_saved_desc and any(keyword in desc.lower() for keyword in TARGET_KEYWORDS):
@@ -78,4 +83,5 @@ if __name__ == "__main__":
     # Simpan kembali riwayat terbaru ke file JSON (Resi delivered otomatis terhapus)
     with open(HISTORY_FILE, "w") as f:
         json.dump(history_data, f, indent=4)
+
 
