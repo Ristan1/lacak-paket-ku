@@ -16,5 +16,11 @@
         "label": "Kipas 12v tipis",
         "last_desc": "",
         "completed": false
+    },
+    "SPXID064775685829": {
+        "courier": "spx",
+        "label": "Decoy pd",
+        "last_desc": "",
+        "completed": false
     }
 }
