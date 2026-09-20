@@ -36,6 +36,14 @@ def check_single_resi(awb, data):
     url = f"https://api.binderbyte.com/v1/track?api_key={BINDERBYTE_API_KEY}&courier={courier}&awb={awb}"
     try:
         response = requests.get(url).json()
+
+        # LOGIKA KHUSUS: Resi CM (JNE-Shopee) sering dibalas "Data not found" di kurir aslinya,
+        # otomatis fallback coba pakai kurir 'spx' (disamakan dengan logic di flask_app.py,
+        # sebelumnya script ini belum punya fallback ini sama sekali)
+        if response.get("status") != 200 and awb.upper().startswith("CM"):
+            url_spx = f"https://api.binderbyte.com/v1/track?api_key={BINDERBYTE_API_KEY}&courier=spx&awb={awb}"
+            response = requests.get(url_spx).json()
+
         if response.get("status") == 200:
             history = response.get("data", {}).get("history", [])
             
