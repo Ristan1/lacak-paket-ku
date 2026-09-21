@@ -16,5 +16,11 @@
         "label": "Ban fdr",
         "last_desc": "PAKET AKAN DIKIRIMKAN KE BDJ_GATEWAY. KAPAL.",
         "completed": false
+    },
+    "SPXID060541636869": {
+        "courier": "spx",
+        "label": "Baterai redmi note 5",
+        "last_desc": "",
+        "completed": false
     }
 }
