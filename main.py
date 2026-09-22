@@ -2,7 +2,11 @@ import os
 import json
 import requests
 
-BINDERBYTE_API_KEY = os.environ.get("BINDERBYTE_KEY")
+BINDERBYTE_KEYS = [
+    os.environ.get("BINDERBYTE_KEY"),
+    os.environ.get("BINDERBYTE_KEY_2"),
+]
+BINDERBYTE_KEYS = [k for k in BINDERBYTE_KEYS if k]  # buang yang kosong/None
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
@@ -33,16 +37,24 @@ def check_single_resi(awb, data):
     label = data.get("label", "Paket")
     last_saved_desc = data.get("last_desc", "")
 
-    url = f"https://api.binderbyte.com/v1/track?api_key={BINDERBYTE_API_KEY}&courier={courier}&awb={awb}"
-    try:
-        response = requests.get(url).json()
-
+    couriers_to_try = [courier]
+    if awb.upper().startswith("CM"):
         # LOGIKA KHUSUS: Resi CM (JNE-Shopee) sering dibalas "Data not found" di kurir aslinya,
-        # otomatis fallback coba pakai kurir 'spx' (disamakan dengan logic di flask_app.py,
-        # sebelumnya script ini belum punya fallback ini sama sekali)
-        if response.get("status") != 200 and awb.upper().startswith("CM"):
-            url_spx = f"https://api.binderbyte.com/v1/track?api_key={BINDERBYTE_API_KEY}&courier=spx&awb={awb}"
-            response = requests.get(url_spx).json()
+        # otomatis fallback coba pakai kurir 'spx'
+        couriers_to_try.append("spx")
+
+    response = {}
+    try:
+        # LOGIKA BARU: Coba tiap API key di BINDERBYTE_KEYS satu-satu.
+        # Kalau key pertama habis kuota/limit (status != 200), otomatis lanjut ke key berikutnya.
+        for key in BINDERBYTE_KEYS:
+            for c in couriers_to_try:
+                url = f"https://api.binderbyte.com/v1/track?api_key={key}&courier={c}&awb={awb}"
+                response = requests.get(url).json()
+                if response.get("status") == 200:
+                    break
+            if response.get("status") == 200:
+                break
 
         if response.get("status") == 200:
             history = response.get("data", {}).get("history", [])
