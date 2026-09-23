@@ -22,5 +22,11 @@
         "label": "Baterai redmi note 5",
         "last_desc": "KURIR SUDAH DITUGASKAN. PESANAN AKAN DIKIRIM.",
         "completed": false
+    },
+    "SPXID064775685829": {
+        "courier": "spx",
+        "label": "PD decoy",
+        "last_desc": "",
+        "completed": false
     }
 }
