@@ -16,5 +16,11 @@
         "label": "PD decoy",
         "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
         "completed": false
+    },
+    "SPXID060521810459": {
+        "courier": "spx",
+        "label": "otg",
+        "last_desc": "",
+        "completed": false
     }
 }
