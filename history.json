@@ -17,16 +17,10 @@
         "last_desc": "PAKET AKAN DIKIRIMKAN KE BDJ_GATEWAY. KAPAL.",
         "completed": false
     },
-    "SPXID060541636869": {
-        "courier": "spx",
-        "label": "Baterai redmi note 5",
-        "last_desc": "KURIR SUDAH DITUGASKAN. PESANAN AKAN DIKIRIM.",
-        "completed": false
-    },
     "SPXID064775685829": {
         "courier": "spx",
         "label": "PD decoy",
-        "last_desc": "",
+        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
         "completed": false
     }
 }
