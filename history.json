@@ -14,13 +14,13 @@
     "SPXID064775685829": {
         "courier": "spx",
         "label": "PD decoy",
-        "last_desc": "Pesanan sedang dalam perjalanan menuju lokasi selanjutnya.",
+        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
         "completed": false
     },
     "SPXID060521810459": {
         "courier": "spx",
         "label": "otg",
-        "last_desc": "PESANAN DIKIRIM DARI LOKASI TRANSIT KOTA JAKARTA UTARA, OVERFLOW PENJARINGAN FIRST MILE HUB.",
+        "last_desc": "PESANAN DIKIRIM DARI LOKASI SORTIR KAB. TANGERANG  KOSAMBI 2 DC KE KOTA BANJARBARU, BANJARBARU DC VIA DARAT DENGAN ESTIMASI WAKTU 1 HARI.",
         "completed": false
     }
 }
