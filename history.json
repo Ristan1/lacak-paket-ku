@@ -14,13 +14,13 @@
     "SPXID064775685829": {
         "courier": "spx",
         "label": "PD decoy",
-        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
+        "last_desc": "Pesanan sedang dalam perjalanan menuju lokasi selanjutnya.",
         "completed": false
     },
     "SPXID060521810459": {
         "courier": "spx",
         "label": "otg",
-        "last_desc": "",
+        "last_desc": "PESANAN DIKIRIM DARI LOKASI TRANSIT KOTA JAKARTA UTARA, OVERFLOW PENJARINGAN FIRST MILE HUB.",
         "completed": false
     }
 }
