@@ -28,5 +28,11 @@
         "label": "Cukur kumis",
         "last_desc": "PESANAN TIBA DI LOKASI TRANSIT KOTA SURABAYA, MULYOREJO 3 FIRST MILE HUB.",
         "completed": false
+    },
+    "SPXID065159144319": {
+        "courier": "spx",
+        "label": "Backdoor si warik",
+        "last_desc": "",
+        "completed": false
     }
 }
