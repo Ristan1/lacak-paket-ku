@@ -32,13 +32,13 @@
     "SPXID065159144319": {
         "courier": "spx",
         "label": "Backdoor si warik",
-        "last_desc": "PESANAN DIKIRIM DARI LOKASI TRANSIT KOTA BANJARBARU, LANDASAN ULIN FIRST MILE HUB.",
+        "last_desc": "PESANAN TELAH DISORTIR DI KAB. BANJAR, BANJARMASIN 2 DC.",
         "completed": false
     },
     "SPXID060600926019": {
         "courier": "spx",
         "label": "Backdoor si warik yg 18k",
-        "last_desc": "PESANAN DIPROSES DI LOKASI TRANSIT KOTA JAKARTA BARAT, KEBON JERUK 7 FIRST MILE HUB.",
+        "last_desc": "PESANAN TELAH DISORTIR DI KAB. TANGERANG, KOSAMBI 2 DC.",
         "completed": false
     }
 }
