@@ -8,7 +8,7 @@
     "JY1725636075": {
         "courier": "jnt",
         "label": "Ban fdr",
-        "last_desc": "PAKET AKAN DIKIRIMKAN KE BDJ_GATEWAY. KAPAL.",
+        "last_desc": "PAKET AKAN DIKIRIMKAN KE MARTAPURA_2. MOBIL.",
         "completed": false
     },
     "SPXID064775685829": {
@@ -20,13 +20,13 @@
     "SPXID060521810459": {
         "courier": "spx",
         "label": "otg",
-        "last_desc": "PESANAN TIBA DI LOKASI TRANSIT KOTA BANJARBARU, BANJARBARU DC.",
+        "last_desc": "PESANAN TELAH DISORTIR DI KOTA BANJARBARU, BANJARBARU DC.",
         "completed": false
     },
     "SPXID062960965249": {
         "courier": "spx",
         "label": "Cukur kumis",
-        "last_desc": "PESANAN DIKIRIM DARI LOKASI SORTIR KOTA SURABAYA  VIRTUAL SURABAYA DC KE KOTA BANJARBARU, BANJARBARU DC VIA DARAT DENGAN ESTIMASI WAKTU 1 HARI.",
+        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
         "completed": false
     },
     "SPXID060600926019": {
