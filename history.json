@@ -2,25 +2,13 @@
     "11004397813755": {
         "courier": "anteraja",
         "label": "Kipas 12v tipis",
-        "last_desc": "PAKET SEDANG DIPROSES DI HUB ",
-        "completed": false
-    },
-    "JY1725636075": {
-        "courier": "jnt",
-        "label": "Ban fdr",
-        "last_desc": "PAKET AKAN DIKIRIM KE ALAMAT PENERIMA.",
+        "last_desc": "Paket sedang diproses di Hub Banjarmasin",
         "completed": false
     },
     "SPXID064775685829": {
         "courier": "spx",
         "label": "PD decoy",
         "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
-        "completed": false
-    },
-    "SPXID060521810459": {
-        "courier": "spx",
-        "label": "otg",
-        "last_desc": "PESANAN DALAM PROSES PENGANTARAN.",
         "completed": false
     },
     "SPXID062960965249": {
@@ -32,7 +20,7 @@
     "SPXID060600926019": {
         "courier": "spx",
         "label": "Backdoor si warik yg 18k",
-        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
+        "last_desc": "PESANAN TIBA DI LOKASI TRANSIT KOTA BANJARBARU, BANJARBARU DC.",
         "completed": false
     }
 }
