@@ -8,7 +8,7 @@
     "JY1725636075": {
         "courier": "jnt",
         "label": "Ban fdr",
-        "last_desc": "PAKET TELAH SAMPAI DI MARTAPURA_2. MOBIL.",
+        "last_desc": "PAKET AKAN DIKIRIM KE ALAMAT PENERIMA.",
         "completed": false
     },
     "SPXID064775685829": {
@@ -20,7 +20,7 @@
     "SPXID060521810459": {
         "courier": "spx",
         "label": "otg",
-        "last_desc": "KURIR SUDAH DITUGASKAN. PESANAN AKAN DIKIRIM.",
+        "last_desc": "PESANAN DALAM PROSES PENGANTARAN.",
         "completed": false
     },
     "SPXID062960965249": {
