@@ -8,19 +8,19 @@
     "SPXID064775685829": {
         "courier": "spx",
         "label": "PD decoy",
-        "last_desc": "PESANAN DIPROSES DI LOKASI TRANSIT KAB. BANJAR, ASTAMBUL HUB.",
+        "last_desc": "PESANAN DALAM PROSES PENGANTARAN.",
         "completed": false
     },
     "SPXID062960965249": {
         "courier": "spx",
         "label": "Cukur kumis",
-        "last_desc": "PESANAN SEDANG DALAM PERJALANAN MENUJU LOKASI SELANJUTNYA.",
+        "last_desc": "PESANAN TIBA DI LOKASI TRANSIT KOTA BANJARBARU, BANJARBARU DC.",
         "completed": false
     },
     "SPXID060600926019": {
         "courier": "spx",
         "label": "Backdoor si warik yg 18k",
-        "last_desc": "PESANAN DIPROSES DI LOKASI TRANSIT KAB. BANJAR, ASTAMBUL HUB.",
+        "last_desc": "PESANAN DALAM PROSES PENGANTARAN.",
         "completed": false
     }
 }
