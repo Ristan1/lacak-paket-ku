@@ -9,7 +9,7 @@
         "courier": "jne",
         "label": "Kartu ATM BCA",
         "phone": "12707",
-        "last_desc": "PROCESSED AT SORTING CENTER [CIKARANG OUTBOUND] [CIKARANG OUTBOUND]",
+        "last_desc": "PROCESS AND FORWARD TO [ASTAMBUL,MARTAPURA] [BDJ, HUB KP BISPARK]",
         "completed": false
     }
 }
